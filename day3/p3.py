@@ -60,7 +60,7 @@ data_augmentation = Sequential(
 
 model = Sequential(
     [
-        # layers.Input(shape=(180, 180, 3)),
+        layers.Input(shape=(180, 180, 3)),
         data_augmentation,
         layers.Rescaling(1.0 / 255),
 
